@@ -12,7 +12,7 @@ export default function CheckoutPage() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
-  
+
   const [isSuccess, setIsSuccess] = useState(false);
   
   const [formData, setFormData] = useState({
@@ -23,8 +23,8 @@ export default function CheckoutPage() {
     upiTxn: ''
   });
 
-  const OWNER_PHONE = "9488424266";
-  const UPI_ID = "9488424266@ybl"; // Example UPI, using owner's number as per request
+  const OWNER_PHONE = "8300062574";
+  const UPI_ID = "8825899428"; // Example UPI, using owner's number as per request
 
   if (cart.length === 0 && !loading && !isSuccess) {
     navigate('/cart');
